@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>manuals</title>
+</head>
+<body>
+
+<h2>Manuals</h2>
+
+<h2><span style="font-weight: 400">User Manual</span></h2>
+<span style="font-weight: 400">Workflow:</span>
+
+<span style="font-weight: 400">Step 1: Upload the fasta file you are interesting in analyzing using SEEKR (for more information on Fasta format for genetic sequences see <a href="https://www.ncbi.nlm.nih.gov/WebSub/html/help/fasta.html">https://www.ncbi.nlm.nih.gov/WebSub/html/help/fasta.html</a>)</span>
+
+<span style="font-weight: 400">Step 2: Choose the set of sequences to compare your file to by either selecting on of the saved options or choosing to upload another file.</span>
+
+<span style="font-weight: 400">Step 3: Choose your normalization set</span>
+
+<span style="font-weight: 400">Step 4: Choose your K-mer count (warning K-mers larger than 6 will not produce visualizations)</span>
+
+<span style="font-weight: 400">Step 5: Press the submit button and the algorithms output will be visualized in the ‘Results’ tab</span>
+
+&nbsp;
+
+<span style="font-weight: 400">Visualizations:</span>
+
+<span style="font-weight: 400">Sequence Kmer Profiles:</span>
+
+<span style="font-weight: 400">Displays the Kmer counts for sequences on the User Set (sequences on the y axis, kmers on the x).</span>
+
+<span style="font-weight: 400">The sequences are automatically arranged according to a k means clustering on the kmer contents of each sequence.</span>
+
+<span style="font-weight: 400">Clicking on either the row or column labels will re-order the graph based on the values in the row or column clicked.</span>
+
+<span style="font-weight: 400">Sequence Pearson Correlation Matrix:</span>
+
+<span style="font-weight: 400">Display</span>
+
+<span style="font-weight: 400">The sequences are automatically arranged according to the same k means clustering as the other visual. </span>
+
+<span style="font-weight: 400">Clicking on either the row or column labels will re-order the graph based on the values in the row or column clicked.</span>
+
+&nbsp;
+<h2><span style="font-weight: 400">Administrator Manual</span></h2>
+<span style="font-weight: 400">General Information:</span>
+
+<span style="font-weight: 400">Python 3.5</span><span style="font-weight: 400">:</span>
+
+<span style="font-weight: 400">Git Code Repository: https://sc.unc.edu/dept-seekr/seekr</span>
+
+<span style="font-weight: 400">For working with the project we suggest the use of the </span><i><span style="font-weight: 400">Pycharm </span></i><span style="font-weight: 400">IDE as it simplifies much of the process, including dependency installation. </span>
+
+<span style="font-weight: 400">This application is dependent upon several libraries for </span><span style="font-weight: 400">Python 3.5 (</span><span style="font-weight: 400">note these packages will not function with older versions of Python so be sure that your local version is up to date, we suggest using a virtual environment, instruction for setting one up can be found in Flask’s installation guide <a href="http://flask.pocoo.org/docs/0.12/installation/#virtualenv">http://flask.pocoo.org/docs/0.12/installation/#virtualenv</a></span>
+
+<span style="font-weight: 400">The dependencies are specified in the </span><i><span style="font-weight: 400">requirements.txt</span></i><span style="font-weight: 400"> document.</span>
+
+<span style="font-weight: 400">Windows Note:</span>
+
+<span style="font-weight: 400">Windows does not come prepackaged with </span><span style="font-weight: 400">Apache</span><span style="font-weight: 400"> and installing it can be tricky. A windows user should be able to run the program locally without </span><span style="font-weight: 400">Apache </span><span style="font-weight: 400">by only running </span><span style="font-weight: 400">seekrServer.py</span><span style="font-weight: 400"> not </span><span style="font-weight: 400">app.py </span><span style="font-weight: 400">(skipping the Apache server config specified below)</span>
+
+<span style="font-weight: 400">The application’s server environment variables are set and initialized by app.py, including --entry-point, which points the server to the main program to execute. </span>
+
+<span style="font-weight: 400">Other configuration options are specified in skr_config.py, including constants</span>
+&nbsp;
+&nbsp;
+
+</body>
+</html>

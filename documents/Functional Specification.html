@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functional Specification</title>
+</head>
+<body>
+<h2>Functional Specification</h2>
+
+<h2><span style="font-weight: 400">Requirements:</span></h2>
+<ol>
+ 	<li><span style="font-weight: 400">Straightforward user interface such as user log in*, file uploading, and setting configurations.</span></li>
+ 	<li><span style="font-weight: 400">Server-side support for analyzing  the .FASTA format file. </span></li>
+ 	<li><span style="font-weight: 400">Visualizing results of two heatmaps (k-mer and Pearson) after uploading .FASTA files and make their selections in drop down menu</span></li>
+ 	<li><span style="font-weight: 400">The user can click on each row index or column index to sort each heatmap, and the user can reset the sorted heatmap and download the result.</span></li>
+ 	<li><span style="font-weight: 400">For visualization, there is a limit on the number of sequences, currently 200.  The k-mer length is also limited for visualization, and the user should get a warning about the visualization if it is too large to run.</span></li>
+ 	<li><span style="font-weight: 400">Host sample files on the server for downloading and testing.</span></li>
+ 	<li><span style="font-weight: 400">Provide a secure log in to control access to the website.</span></li>
+ 	<li><span style="font-weight: 400">Pre-compute common uses cases (GENCODE human, mouse) to allow for faster results.</span></li>
+ 	<li>For all sequences includes those that cannot be visualized, provide a csv download of the results.</li>
+</ol>
+<span style="font-weight: 400">*login is currently disabled by default</span>
+<h2><span style="font-weight: 400">Interface:</span></h2>
+<span style="font-weight: 400">    </span> <span style="font-weight: 400">GUI:</span>
+
+<a href="../image/mockup1.png"><img class="alignnone size-full wp-image-114" src="../image/mockup1.png" alt="" width="945" height="659" /></a>
+
+<span style="font-weight: 400"> Input and output mechanism:</span>
+
+<span style="font-weight: 400">              </span> <span style="font-weight: 400">Input: upload .FASTA file, select comparsion set and normalization</span>
+
+<span style="font-weight: 400">              </span> <span style="font-weight: 400">Output: two visualization with sorting function.</span>
+
+<span style="font-weight: 400">     </span>
+<h2><span style="font-weight: 400">API:  </span></h2>
+<ul>
+ 	<li>GET/home
+<ul>
+ 	<li>After successful login, will be directed home
+with 3 tabs: Run Seekr, Result and Help</li>
+</ul>
+</li>
+ 	<li>POST /jobs
+<ul>
+ 	<li>POSTs to jobs, uploads files onto the server
+RETURNS json {“job-id”:”created job id”}</li>
+</ul>
+</li>
+ 	<li>POST /files/fasta
+<ul>
+ 	<li>Upload a new FASTA file to the server
+RETURNS json {“file-id”:”created file id”}</li>
+</ul>
+</li>
+ 	<li>POST/files/kmers
+<ul>
+ 	<li>Downloads the result file returned from the server in CSV format</li>
+</ul>
+</li>
+ 	<li>GET /login
+<ul>
+ 	<li>Retrieves the login page for the user to authenticate</li>
+</ul>
+</li>
+ 	<li>POST/login
+<ul>
+ 	<li>POST and check user name and password</li>
+</ul>
+</li>
+</ul>
+&nbsp;
+<h2><span style="font-weight: 400">Functional Requirements:</span></h2>
+<span style="font-weight: 400">Website Basic function: narrowing down similar RNAs and find discriminative RNAs. It is mostly intended for the RNA research group.</span>
+
+<span style="font-weight: 400">Website UI: It is mainly three parts: </span>
+
+<span style="font-weight: 400">Run SEEKR: contains the upload button, dropdown button and submit button</span>
+
+<span style="font-weight: 400">Results: contains the result heatmaps after uploading and submitting files</span>
+
+<span style="font-weight: 400">Help: contains sample test files for user to test and a simple user manual.</span>
+
+<span style="font-weight: 400">Users can be mainly divided into two groups:</span>
+<h2><span style="font-weight: 400">User cases:</span></h2>
+<span style="font-weight: 400">Users who want to compare their own sets of nucleotide sequences.</span>
+<ol>
+ 	<li><span style="font-weight: 400">The user uploads their user-defined set of nucleotide sequences by clicking an upload button on the SEEKR web portal. Then they upload a second user-defined set of nucleotide sequences to compare with the first.</span></li>
+ 	<li><span style="font-weight: 400">The user will then click the drop-down menu and choose the option to compare with their user-defined sets.</span></li>
+ 	<li><span style="font-weight: 400">The user will choose the normalization vector in the next drop-down menu and this normalization is applied to both user-defined sets.</span></li>
+ 	<li><span style="font-weight: 400">The user clicks a submit style button and the SEEKR algorithm runs and user can see the progress through the progress bar. The result is returned as a matrix of normalized k-mer counts and a matrix of Pearson’s R coefficients and these can be downloaded as files and optionally displayed.</span></li>
+ 	<li><span style="font-weight: 400">User can see the resulting heatmap for the k-mer count and Pearson on the results tab, user can sort each column or row of result matrix. users can click a reset button to reset the sorted heatmap.</span></li>
+</ol>
+<span style="font-weight: 400">Users who want to compare their user-defined sets with a predefined set of nucleotide sequences.</span>
+<ol>
+ 	<li><span style="font-weight: 400">The user uploads their user-defined set of nucleotide sequences by clicking an upload button on the SEEKR web portal.</span></li>
+ 	<li><span style="font-weight: 400">The user will then click the drop-down menu and choose the option to compare with a predefined-set which includes a set for all human and mouse RNA from GENCODE.</span></li>
+ 	<li><span style="font-weight: 400">The user will choose the normalization vector in the next drop-down menu and the normalization is applied to the user-defined sequences that is computed from the GENCODE predefined sets.</span></li>
+ 	<li><span style="font-weight: 400">The user clicks a submit style button and the SEEKR algorithm runs and user can see the progress through the progress bar. The result is returned as a matrix of normalized k-mer counts and a matrix of Pearson’s R coefficients and these can be downloaded as files and optionally displayed.</span></li>
+ 	<li><span style="font-weight: 400">The user can see the resulting heatmap for k-mer counts and Pearson on the results tab.  They can sort each column or row of the results matrix. and undo the sorting with the reset button.</span></li>
+</ol>
+&nbsp;
+
+&nbsp;
+
+<span style="font-weight: 400">User type:</span>
+
+<span style="font-weight: 400">-RNA research group in UNC.</span>
+
+<span style="font-weight: 400">-RNA research group outside UNC(novice users)</span>
+
+<span style="font-weight: 400">For novice users: </span>
+
+<span style="font-weight: 400">The website is intended to help narrow down similar and discriminative RNAs. By simply uploading files and getting visualizations, the user could find the similarity between their own RNA sequences and the GENCODE human or mouse RNAs in a sortable heatmap.</span>
+
+&nbsp;
+
+</body>
+</html>

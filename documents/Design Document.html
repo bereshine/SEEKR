@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design Document</title>
+
+</head>
+<body>
+
+
+<h2>Architecture</h2>
+SEEKR Web Portal Architectural Diagram
+
+<a href="../image/architecture.png"><img class="alignnone wp-image-105 size-full" src="../image/architecture.png" alt="" width="524" height="746" /></a>
+
+The architecture follows a client-server architecture for web requests and a Service Oriented Architecture (SOA) for RESTful web services.  A typical user will access the application through the web client which users the web interface which is implemented in the Flask microframework.  The web client's main interface is found at home.html and will make calls to the RESTful web services in order to run the SEEKR algorithm.  Power users can call these web services directly through the web services interface which is also implemented in Flask.  The SEEKR algorithm component will run the algorithm on user selected sequences with the specified options and return raw results.  A future visualization component will take the raw results and render them to graphics which will aid in interpreting the results.
+<h2>Decomposition</h2>
+<h3>Modules</h3>
+The current modules are described above (web interface, web services, and the SEEKR algorithm).  The SEEKR algorithm code was originally written by the client, but has been modified some to run on our server and we will likely make future changes to this code.
+<h3>Processes</h3>
+We run on a multi-threaded architecture provided by the Flask framework where HTTP (and thus our RESTful web services) can be handled by separate processes.  The stateless nature of HTTP allows these to run concurrently.
+<h3>Data</h3>
+We currently do not persist data as part of our current design.
+<h3></h3>
+<h2>Design Decisions</h2>
+<h3>Persistence</h3>
+Our current implementation does not persist user specific data, which limits the ability for users to maintain sequences over sessions, execute long-running jobs, and continue work from other other machines.
+<h3>SOA Architecture</h3>
+Our architecture enables power users to leverage our API directly and bypass the web client if desired.
+
+&nbsp;
+<h2>Deployment</h2>
+<a href="../image/CloudappsOverview.png"><img class="alignnone size-full wp-image-148" src="../image/CloudappsOverview.png" alt="" width="297" height="300" /></a>
+
+(diagram from <a href="https://help.unc.edu/help/carolina-cloudapps-overview/">https://help.unc.edu/help/carolina-cloudapps-overview/</a>)
+</body>
+</html>
