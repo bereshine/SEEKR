@@ -1,0 +1,8 @@
+mod_wsgi
+Flask==0.12.2
+tqdm==4.17.1
+numpy==1.13.1
+pandas==0.20.3
+bokeh==0.12.10
+scipy
+pathlib

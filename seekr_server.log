@@ -1,0 +1,294 @@
+Running the algorithm took 0.187 seconds
+Error in /jobs
+Traceback (most recent call last):
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrServer.py", line 208, in process_jobs
+    counts, names, comparison_counts, comparison_names, counter = _run_seekr_algorithm(parameters=parameters)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrLauncher.py", line 188, in _run_seekr_algorithm
+    normalization_path = get_precomputed_normalization_path(parameters)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrLauncher.py", line 295, in get_precomputed_normalization_path
+    raise SeekrServerError('Fasta file <' + fasta_file + '> not found for kmer_length=' +  str(parameters['kmer_length']) )
+SeekrServerError.SeekrServerError: Fasta file <gencode.v27.lncRNA_transcripts.fa> not found for kmer_length=3
+Running the algorithm took 0.188 seconds
+Error in /jobs
+Traceback (most recent call last):
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrServer.py", line 208, in process_jobs
+    counts, names, comparison_counts, comparison_names, counter = _run_seekr_algorithm(parameters=parameters)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrLauncher.py", line 188, in _run_seekr_algorithm
+    normalization_path = get_precomputed_normalization_path(parameters)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrLauncher.py", line 295, in get_precomputed_normalization_path
+    raise SeekrServerError('Fasta file <' + fasta_file + '> not found for kmer_length=' +  str(parameters['kmer_length']) )
+SeekrServerError.SeekrServerError: Fasta file <gencode.v27.lncRNA_transcripts.fa> not found for kmer_length=2
+Error in /jobs
+Traceback (most recent call last):
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrServer.py", line 208, in process_jobs
+    counts, names, comparison_counts, comparison_names, counter = _run_seekr_algorithm(parameters=parameters)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrLauncher.py", line 188, in _run_seekr_algorithm
+    normalization_path = get_precomputed_normalization_path(parameters)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrLauncher.py", line 295, in get_precomputed_normalization_path
+    raise SeekrServerError('Fasta file <' + fasta_file + '> not found for kmer_length=' +  str(parameters['kmer_length']) )
+SeekrServerError.SeekrServerError: Fasta file <gencode.v27.lncRNA_transcripts.fa> not found for kmer_length=2
+Running the algorithm took 0.118 seconds
+Running the algorithm took 0.056 seconds
+Running the algorithm took 0.046 seconds
+Running the algorithm took 0.253 seconds
+Running the algorithm took 0.203 seconds
+Running the algorithm took 0.115 seconds
+Running the algorithm took 0.010 seconds
+Running the algorithm took 0.023 seconds
+Running the algorithm took 0.012 seconds
+Running the algorithm took 0.136 seconds
+Running the algorithm took 0.012 seconds
+Running the algorithm took 0.183 seconds
+Running the algorithm took 0.011 seconds
+Running the algorithm took 0.038 seconds
+Running the algorithm took 0.011 seconds
+Running the algorithm took 0.021 seconds
+Running the algorithm took 0.012 seconds
+Running the algorithm took 0.015 seconds
+Running the algorithm took 0.023 seconds
+Running the algorithm took 0.020 seconds
+Running the algorithm took 0.011 seconds
+Running the algorithm took 0.015 seconds
+Running the algorithm took 0.011 seconds
+Running the algorithm took 0.012 seconds
+Running the algorithm took 0.023 seconds
+Running the algorithm took 0.010 seconds
+Running the algorithm took 0.014 seconds
+Running the algorithm took 0.054 seconds
+Running the algorithm took 0.016 seconds
+Running the algorithm took 0.027 seconds
+Running the algorithm took 0.051 seconds
+Running the algorithm took 0.036 seconds
+Running the algorithm took 0.010 seconds
+Running the algorithm took 0.012 seconds
+Running the algorithm took 0.023 seconds
+Running the algorithm took 0.029 seconds
+Running the algorithm took 0.018 seconds
+Running the algorithm took 0.036 seconds
+Running the algorithm took 0.011 seconds
+Running the algorithm took 0.164 seconds
+Running the algorithm took 0.161 seconds
+Running the algorithm took 0.203 seconds
+Running the algorithm took 0.162 seconds
+Running the algorithm took 0.164 seconds
+Running the algorithm took 0.179 seconds
+Running the algorithm took 0.172 seconds
+Running the algorithm took 0.150 seconds
+Running the algorithm took 0.160 seconds
+Running the algorithm took 0.185 seconds
+Running the algorithm took 0.174 seconds
+Running the algorithm took 0.189 seconds
+Running the algorithm took 0.186 seconds
+Running the algorithm took 0.171 seconds
+Running the algorithm took 0.179 seconds
+Running the algorithm took 0.178 seconds
+Running the algorithm took 0.164 seconds
+Running the algorithm took 0.144 seconds
+Running the algorithm took 0.154 seconds
+Running the algorithm took 0.174 seconds
+Running the algorithm took 0.157 seconds
+Running the algorithm took 0.155 seconds
+Running the algorithm took 0.143 seconds
+Running the algorithm took 0.164 seconds
+Running the algorithm took 0.145 seconds
+Running the algorithm took 0.126 seconds
+Running the algorithm took 0.103 seconds
+Running the algorithm took 0.116 seconds
+Running the algorithm took 0.119 seconds
+Running the algorithm took 0.104 seconds
+Running the algorithm took 0.130 seconds
+Running the algorithm took 0.172 seconds
+Running the algorithm took 0.174 seconds
+Running the algorithm took 0.161 seconds
+Running the algorithm took 0.147 seconds
+Running the algorithm took 0.149 seconds
+Running the algorithm took 0.143 seconds
+Running the algorithm took 0.155 seconds
+Running the algorithm took 0.175 seconds
+Running the algorithm took 0.156 seconds
+Running the algorithm took 0.149 seconds
+Running the algorithm took 0.155 seconds
+Running the algorithm took 0.150 seconds
+Running the algorithm took 0.143 seconds
+Running the algorithm took 0.159 seconds
+Running the algorithm took 0.153 seconds
+Running the algorithm took 0.160 seconds
+Running the algorithm took 0.154 seconds
+Running the algorithm took 0.147 seconds
+Running the algorithm took 0.184 seconds
+Running the algorithm took 0.118 seconds
+Running the algorithm took 0.144 seconds
+Running the algorithm took 0.127 seconds
+Running the algorithm took 0.119 seconds
+Running the algorithm took 0.197 seconds
+Running the algorithm took 0.159 seconds
+Running the algorithm took 0.163 seconds
+Running the algorithm took 0.188 seconds
+Running the algorithm took 0.167 seconds
+Running the algorithm took 0.135 seconds
+Running the algorithm took 0.090 seconds
+Running the algorithm took 0.128 seconds
+Running the algorithm took 0.136 seconds
+Running the algorithm took 0.144 seconds
+Running the algorithm took 0.183 seconds
+Running the algorithm took 0.135 seconds
+Running the algorithm took 0.231 seconds
+Running the algorithm took 0.148 seconds
+Running the algorithm took 0.157 seconds
+Running the algorithm took 0.173 seconds
+Running the algorithm took 0.156 seconds
+Running the algorithm took 0.161 seconds
+Running the algorithm took 0.162 seconds
+Running the algorithm took 0.147 seconds
+Running the algorithm took 0.169 seconds
+Running the algorithm took 0.173 seconds
+Running the algorithm took 0.162 seconds
+Running the algorithm took 0.212 seconds
+Running the algorithm took 0.172 seconds
+Running the algorithm took 0.169 seconds
+Running the algorithm took 0.158 seconds
+Running the algorithm took 0.159 seconds
+Running the algorithm took 0.172 seconds
+Running the algorithm took 0.171 seconds
+Running the algorithm took 0.160 seconds
+Running the algorithm took 0.151 seconds
+Running the algorithm took 0.166 seconds
+Running the algorithm took 0.166 seconds
+Running the algorithm took 0.205 seconds
+Running the algorithm took 0.247 seconds
+Running the algorithm took 0.205 seconds
+Running the algorithm took 0.229 seconds
+Running the algorithm took 0.222 seconds
+Running the algorithm took 0.211 seconds
+Running the algorithm took 0.244 seconds
+Running the algorithm took 0.209 seconds
+Running the algorithm took 0.222 seconds
+Running the algorithm took 0.227 seconds
+Running the algorithm took 0.177 seconds
+Running the algorithm took 0.271 seconds
+Running the algorithm took 0.194 seconds
+Running the algorithm took 0.153 seconds
+Running the algorithm took 0.199 seconds
+Running the algorithm took 0.159 seconds
+Running the algorithm took 0.172 seconds
+Running the algorithm took 0.171 seconds
+Running the algorithm took 0.187 seconds
+Running the algorithm took 0.189 seconds
+Running the algorithm took 0.181 seconds
+Running the algorithm took 0.170 seconds
+Running the algorithm took 0.128 seconds
+Running the algorithm took 0.177 seconds
+Running the algorithm took 0.160 seconds
+Running the algorithm took 0.187 seconds
+Running the algorithm took 0.171 seconds
+Running the algorithm took 0.162 seconds
+Running the algorithm took 0.176 seconds
+Running the algorithm took 0.170 seconds
+Running the algorithm took 0.183 seconds
+Running the algorithm took 0.176 seconds
+Running the algorithm took 0.180 seconds
+Running the algorithm took 0.171 seconds
+Running the algorithm took 0.168 seconds
+Running the algorithm took 0.173 seconds
+Running the algorithm took 0.156 seconds
+Running the algorithm took 0.196 seconds
+Running the algorithm took 0.158 seconds
+Running the algorithm took 0.155 seconds
+Running the algorithm took 0.184 seconds
+Running the algorithm took 0.154 seconds
+Running the algorithm took 0.149 seconds
+Error in /jobs
+Traceback (most recent call last):
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrServer.py", line 201, in process_jobs
+    parameters['directory_id'] = session_helper.get_directory_id(session)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/session_helper.py", line 63, in get_directory_id
+    return session['directory_id']
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/werkzeug/local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+KeyError: 'directory_id'
+Running the algorithm took 0.156 seconds
+Running the algorithm took 0.180 seconds
+Exception on /files/fasta [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrServer.py", line 255, in create_fasta
+    session_helper.create_file(file, session, file_identifier, extension='fasta')
+  File "/Users/a123/PycharmProjects/Myproject/seekr/session_helper.py", line 41, in create_file
+    file_path = _get_user_file_path(session, file_identifier, extension)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/session_helper.py", line 33, in _get_user_file_path
+    user_directory_name = session['directory_id']
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/werkzeug/local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+KeyError: 'directory_id'
+Running the algorithm took 0.145 seconds
+Running the algorithm took 0.164 seconds
+Running the algorithm took 0.193 seconds
+Running the algorithm took 0.160 seconds
+Running the algorithm took 0.152 seconds
+Running the algorithm took 0.166 seconds
+Running the algorithm took 0.166 seconds
+Error in /jobs
+Traceback (most recent call last):
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrServer.py", line 154, in process_jobs
+    parameters['directory_id'] = session_helper.get_directory_id(session)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/session_helper.py", line 63, in get_directory_id
+    return session['directory_id']
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/werkzeug/local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+KeyError: 'directory_id'
+Running the algorithm took 0.140 seconds
+Running the algorithm took 0.186 seconds
+Running the algorithm took 0.156 seconds
+Running the algorithm took 0.184 seconds
+Running the algorithm took 0.190 seconds
+Running the algorithm took 0.151 seconds
+Running the algorithm took 0.168 seconds
+Running the algorithm took 0.159 seconds
+Running the algorithm took 0.145 seconds
+Exception on /files/fasta [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/seekrServer.py", line 255, in create_fasta
+    session_helper.create_file(file, session, file_identifier, extension='fasta')
+  File "/Users/a123/PycharmProjects/Myproject/seekr/session_helper.py", line 41, in create_file
+    file_path = _get_user_file_path(session, file_identifier, extension)
+  File "/Users/a123/PycharmProjects/Myproject/seekr/session_helper.py", line 33, in _get_user_file_path
+    user_directory_name = session['directory_id']
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/werkzeug/local.py", line 377, in <lambda>
+    __getitem__ = lambda x, i: x._get_current_object()[i]
+KeyError: 'directory_id'
+Running the algorithm took 0.172 seconds
+Running the algorithm took 0.178 seconds
+Running the algorithm took 0.253 seconds
+Running the algorithm took 0.188 seconds
+Running the algorithm took 0.162 seconds
+Running the algorithm took 0.158 seconds
+Running the algorithm took 0.158 seconds
+Running the algorithm took 0.164 seconds
+Running the algorithm took 0.155 seconds
+{'comparison_set': '', 'kmer_length': 3, 'user_set_files': 'fdf92023-8479-4ab8-b5cd-35e7bce00448', 'comparison_set_files': 'fdf92023-8479-4ab8-b5cd-35e7bce00448', 'directory_id': 'fce86632-cd7b-4169-8191-45dd27ebfee6', 'normal_set': 'user_set'}
+Running the algorithm took 0.158 seconds
+Running the algorithm took 0.140 seconds
+Running the algorithm took 0.149 seconds
